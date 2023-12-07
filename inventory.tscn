@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmou78ap7e8jm"]
+
+[sub_resource type="Theme" id="Theme_gqiq1"]
+default_font_size = 36
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v1u2e"]
+
+[node name="Inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_gqiq1")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_v1u2e")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -84.0
+offset_right = 84.0
+offset_bottom = 53.0
+grow_horizontal = 2
+text = "Inventory"

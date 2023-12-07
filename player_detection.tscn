@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmgfqk6nrap2n"]
+
+[ext_resource type="Script" path="res://PlayerDetection.gd" id="1_spkji"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_3a80x"]
+height = 0.001
+radius = 1.83958
+
+[node name="PlayerDetection" type="Area3D"]
+script = ExtResource("1_spkji")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.659484, 0)
+shape = SubResource("CylinderShape3D_3a80x")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

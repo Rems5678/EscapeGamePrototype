@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=3 uid="uid://b1uan1r76xfh1"]
+
+[ext_resource type="Texture2D" uid="uid://da365d7vmgk3n" path="res://assets/textures/grey_stone_path_disp_4k.png" id="1_krt5q"]
+[ext_resource type="Texture2D" uid="uid://dbq3rdli24ewk" path="res://assets/textures/grey_stone_path_nor_gl_4k.png" id="2_j1gtc"]
+[ext_resource type="Texture2D" uid="uid://bihmcqeylm07e" path="res://assets/textures/grey_stone_path_rough_4k.exr" id="3_f5n3r"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s714u"]
+albedo_color = Color(0.443137, 0.443137, 0.443137, 1)
+albedo_texture = ExtResource("1_krt5q")
+roughness_texture = ExtResource("3_f5n3r")
+normal_enabled = true
+normal_scale = -6.21
+normal_texture = ExtResource("2_j1gtc")
+uv1_scale = Vector3(5.69, 5.69, 5.69)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_v8x43"]
+material = SubResource("StandardMaterial3D_s714u")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h4s4h"]
+size = Vector3(66.318, 0.001, 73.8645)
+
+[node name="Floor" type="StaticBody3D"]
+
+[node name="Cube" type="MeshInstance3D" parent="."]
+transform = Transform3D(33.1277, -4.91631e-05, 0.0133496, 0.00814018, 0.2, 0.0117604, -0.0119838, -6.37103e-05, 36.9098, -0.0345917, 0.06744, 0.170181)
+mesh = SubResource("PlaneMesh_v8x43")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.97706, 0, 0, 0, 0.97706, 0, 0, 0, 0.97706, 0, 0, 0)
+shape = SubResource("BoxShape3D_h4s4h")

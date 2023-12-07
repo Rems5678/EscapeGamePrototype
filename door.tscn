@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=3 uid="uid://d08yuvnoyrc6o"]
+
+[ext_resource type="Script" path="res://door.gd" id="1_2lnl6"]
+[ext_resource type="PackedScene" uid="uid://bmgfqk6nrap2n" path="res://player_detection.tscn" id="1_mp62j"]
+
+[sub_resource type="Animation" id="Animation_jyf0m"]
+resource_name = "door"
+length = 2.0
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array()
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.99922),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 1.5708, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ayl5p"]
+_data = {
+"door": SubResource("Animation_jyf0m")
+}
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_flyru"]
+albedo_color = Color(1, 0.588235, 1, 1)
+metallic = 0.46
+
+[sub_resource type="BoxMesh" id="BoxMesh_ymywh"]
+material = SubResource("StandardMaterial3D_flyru")
+size = Vector3(4, 5, 0.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qcvcq"]
+points = PackedVector3Array(-2, -2.5, -0.25, -2, -2.5, 0.25, -2, 2.5, -0.25, 2, -2.5, -0.25, 2, -2.5, 0.25, -2, 2.5, 0.25, 2, 2.5, -0.25, 2, 2.5, 0.25)
+
+[node name="pivot" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0278673, 0, 0)
+script = ExtResource("1_2lnl6")
+
+[node name="door_open_close" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ayl5p")
+}
+
+[node name="door" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5767, 0, 0)
+
+[node name="PlayerDetection" parent="door" instance=ExtResource("1_mp62j")]
+transform = Transform3D(1.35063, 0.022341, -0.0184596, -0.0223143, 1.35076, 0.00210609, 0.0184919, -0.00180073, 1.35082, -0.541697, 0.701942, -0.0349917)
+nodePath = NodePath("../..")
+enterFunc = "open"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="door"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.512157, 2.43866, 0)
+mesh = SubResource("BoxMesh_ymywh")
+skeleton = NodePath("../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="door"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.512157, 2.43866, 0)
+shape = SubResource("ConvexPolygonShape3D_qcvcq")
