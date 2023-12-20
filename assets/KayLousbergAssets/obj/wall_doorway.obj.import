@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dvl88eht4bxup"
+path="res://.godot/imported/wall_doorway.obj-87bee58d81da9eac4cb7ba7ffd4112de.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall_doorway.obj-87bee58d81da9eac4cb7ba7ffd4112de.mesh"]
+
+source_file="res://assets/KayLousbergAssets/obj/wall_doorway.obj"
+dest_files=["res://.godot/imported/wall_doorway.obj-87bee58d81da9eac4cb7ba7ffd4112de.mesh", "res://.godot/imported/wall_doorway.obj-87bee58d81da9eac4cb7ba7ffd4112de.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

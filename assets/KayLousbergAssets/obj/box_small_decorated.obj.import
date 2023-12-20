@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ctlael2l6yw4e"
+path="res://.godot/imported/box_small_decorated.obj-7e00c63c7b8e22fe87c4acbd46666293.mesh"
+
+[deps]
+
+files=["res://.godot/imported/box_small_decorated.obj-7e00c63c7b8e22fe87c4acbd46666293.mesh"]
+
+source_file="res://assets/KayLousbergAssets/obj/box_small_decorated.obj"
+dest_files=["res://.godot/imported/box_small_decorated.obj-7e00c63c7b8e22fe87c4acbd46666293.mesh", "res://.godot/imported/box_small_decorated.obj-7e00c63c7b8e22fe87c4acbd46666293.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

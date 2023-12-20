@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://d08yuvnoyrc6o"]
 
 [ext_resource type="Script" path="res://door.gd" id="1_2lnl6"]
-[ext_resource type="PackedScene" uid="uid://bmgfqk6nrap2n" path="res://player_detection.tscn" id="1_mp62j"]
+[ext_resource type="PackedScene" uid="uid://c52l7b250ov5q" path="res://interactables/interaction_trigger.tscn" id="2_3k1eg"]
 
 [sub_resource type="Animation" id="Animation_jyf0m"]
 resource_name = "door"
@@ -54,11 +54,6 @@ libraries = {
 [node name="door" type="RigidBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5767, 0, 0)
 
-[node name="PlayerDetection" parent="door" instance=ExtResource("1_mp62j")]
-transform = Transform3D(1.35063, 0.022341, -0.0184596, -0.0223143, 1.35076, 0.00210609, 0.0184919, -0.00180073, 1.35082, -0.541697, 0.701942, -0.0349917)
-nodePath = NodePath("../..")
-enterFunc = "open"
-
 [node name="MeshInstance3D" type="MeshInstance3D" parent="door"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.512157, 2.43866, 0)
 mesh = SubResource("BoxMesh_ymywh")
@@ -67,3 +62,6 @@ skeleton = NodePath("../../..")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="door"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.512157, 2.43866, 0)
 shape = SubResource("ConvexPolygonShape3D_qcvcq")
+
+[node name="InteractionTrigger" parent="door" instance=ExtResource("2_3k1eg")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.463907, 0, 0)

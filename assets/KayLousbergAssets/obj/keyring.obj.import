@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://h4r7l45ijeox"
+path="res://.godot/imported/keyring.obj-4ab51dac92f6d20876cc2f44e6857108.mesh"
+
+[deps]
+
+files=["res://.godot/imported/keyring.obj-4ab51dac92f6d20876cc2f44e6857108.mesh"]
+
+source_file="res://assets/KayLousbergAssets/obj/keyring.obj"
+dest_files=["res://.godot/imported/keyring.obj-4ab51dac92f6d20876cc2f44e6857108.mesh", "res://.godot/imported/keyring.obj-4ab51dac92f6d20876cc2f44e6857108.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

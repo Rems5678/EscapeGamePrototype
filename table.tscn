@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3uipp1urkpb8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_051lu"]
+albedo_color = Color(1, 1, 1, 0)
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pvpxt"]
+next_pass = SubResource("StandardMaterial3D_051lu")
+albedo_color = Color(0.0941176, 0.0941176, 0.0941176, 1)
+backlight = Color(0, 0.92549, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lf060"]
+material = SubResource("StandardMaterial3D_pvpxt")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_usg1y"]
+size = Vector3(1.59186, 1.10262, 2.63193)
+
+[node name="Table" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." groups=["interactables"]]
+
+[node name="Mesh" type="MeshInstance3D" parent="RigidBody3D"]
+transform = Transform3D(1.48536, 0, 0, 0, 1.01123, 0, 0, 0, 2.4869, 0, 0.527528, 0)
+mesh = SubResource("BoxMesh_lf060")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, -8.20562e-06, -0.000689287, 8.6218e-06, 1, 0.000642711, 0.000689282, -0.000642716, 1, -0.0336286, 0.567989, -0.0179225)
+shape = SubResource("BoxShape3D_usg1y")

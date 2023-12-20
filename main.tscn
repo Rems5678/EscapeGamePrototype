@@ -1,10 +1,20 @@
-[gd_scene load_steps=9 format=3 uid="uid://dso6d4c6afexn"]
+[gd_scene load_steps=13 format=3 uid="uid://dso6d4c6afexn"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_33yfl"]
 [ext_resource type="PackedScene" uid="uid://b1uan1r76xfh1" path="res://floor.tscn" id="1_powoj"]
 [ext_resource type="PackedScene" uid="uid://cdmblvdfgp7bj" path="res://player.tscn" id="2_24wtw"]
-[ext_resource type="PackedScene" uid="uid://bmgfqk6nrap2n" path="res://player_detection.tscn" id="4_vjr4q"]
+[ext_resource type="PackedScene" uid="uid://c5pny0p5pe08e" path="res://puzzle1.tscn" id="3_f5txn"]
+[ext_resource type="PackedScene" uid="uid://c3uipp1urkpb8" path="res://table.tscn" id="5_htc5p"]
 [ext_resource type="PackedScene" uid="uid://d08yuvnoyrc6o" path="res://door.tscn" id="5_mmeqv"]
+[ext_resource type="PackedScene" uid="uid://dus0hex12tkvb" path="res://box.tscn" id="7_13qio"]
+[ext_resource type="PackedScene" uid="uid://rl1t84khqcou" path="res://bottle_a.tscn" id="7_n8mfd"]
+[ext_resource type="PackedScene" uid="uid://tl044e3opnqb" path="res://box_slot.tscn" id="8_6ktxi"]
+
+[sub_resource type="GDScript" id="GDScript_e2bqv"]
+script/source = "extends Node3D
+
+func _physics_process(delta):
+	pass
+"
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_g1th4"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -20,21 +30,36 @@ tonemap_mode = 2
 glow_enabled = true
 
 [node name="Main" type="Node3D"]
-script = ExtResource("1_33yfl")
+script = SubResource("GDScript_e2bqv")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_248dj")
 
 [node name="Floor" parent="." instance=ExtResource("1_powoj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.070055, 0.0545139, -0.0361633)
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.879842, 0.198744, -0.431717, 0.391389, 0.212324, 0.895396, 0.269618, -0.956776, 0.109025, -3.48741, 11.1968, 1.66128)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0730228, 0, 0)
 
 [node name="Player" parent="." instance=ExtResource("2_24wtw")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.147086, 0.0251586, 16.7143)
-
-[node name="PlayerDetection" parent="." instance=ExtResource("4_vjr4q")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.147, 0, 16.714)
 
 [node name="pivot" parent="." instance=ExtResource("5_mmeqv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.1266, 0.397878, 0.0273016)
+transform = Transform3D(0.974791, 0, 0, 0, 0.974791, 0, 0, 0, 0.974791, 18.127, 0, 0.027)
+
+[node name="puzzle1" parent="." instance=ExtResource("3_f5txn")]
+transform = Transform3D(-0.0182028, 0, -0.999834, 0, 1, 0, 0.999834, 0, -0.0182028, 0.334647, 0.186274, 10.6644)
+
+[node name="Table" parent="." instance=ExtResource("5_htc5p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5158, 0, 12)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.619779, 0.784776, 0, -0.784776, 0.619779, -3.28305, 23.6104, 14.676)
+
+[node name="bottle_a" parent="." instance=ExtResource("7_n8mfd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.25992, 0, 18.0491)
+collision_layer = 4
+collision_mask = 3
+
+[node name="Box" parent="." instance=ExtResource("7_13qio")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.19367, 0.492, 14.7201)
+
+[node name="box_slot" parent="." instance=ExtResource("8_6ktxi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.12035, 0.540025, 21.8975)

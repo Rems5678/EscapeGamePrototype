@@ -1,0 +1,30 @@
+[gd_scene load_steps=7 format=3 uid="uid://dus0hex12tkvb"]
+
+[ext_resource type="Script" path="res://box.gd" id="1_rx06d"]
+[ext_resource type="Resource" uid="uid://do2olt7s32gmv" path="res://inventory/items/box.tres" id="2_x5hsn"]
+[ext_resource type="PackedScene" uid="uid://c52l7b250ov5q" path="res://interactables/interaction_trigger.tscn" id="3_k7m3q"]
+[ext_resource type="Material" uid="uid://dbjrr30qn3g8h" path="res://inventory/items/box_material.tres" id="3_xpt61"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_7bnp8"]
+material = ExtResource("3_xpt61")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k0dyl"]
+size = Vector3(1, 1.0271, 1)
+
+[node name="Box" type="RigidBody3D" groups=["interactables"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.492204, 0)
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_rx06d")
+item = ExtResource("2_x5hsn")
+metadata/_edit_lock_ = true
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_7bnp8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00134957, 0)
+shape = SubResource("BoxShape3D_k0dyl")
+
+[node name="InteractionTrigger" parent="." instance=ExtResource("3_k7m3q")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, -0.433472, 0)

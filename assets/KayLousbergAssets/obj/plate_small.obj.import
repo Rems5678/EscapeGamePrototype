@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://crfqj8srokwbd"
+path="res://.godot/imported/plate_small.obj-6e21ccac0866e1743cdce875b4e5ea5e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/plate_small.obj-6e21ccac0866e1743cdce875b4e5ea5e.mesh"]
+
+source_file="res://assets/KayLousbergAssets/obj/plate_small.obj"
+dest_files=["res://.godot/imported/plate_small.obj-6e21ccac0866e1743cdce875b4e5ea5e.mesh", "res://.godot/imported/plate_small.obj-6e21ccac0866e1743cdce875b4e5ea5e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

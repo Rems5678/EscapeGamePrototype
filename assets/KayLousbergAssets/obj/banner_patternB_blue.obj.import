@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://t71fxwgm2x11"
+path="res://.godot/imported/banner_patternB_blue.obj-895aa167ba6abb6a3bfe241d5f34613f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/banner_patternB_blue.obj-895aa167ba6abb6a3bfe241d5f34613f.mesh"]
+
+source_file="res://assets/KayLousbergAssets/obj/banner_patternB_blue.obj"
+dest_files=["res://.godot/imported/banner_patternB_blue.obj-895aa167ba6abb6a3bfe241d5f34613f.mesh", "res://.godot/imported/banner_patternB_blue.obj-895aa167ba6abb6a3bfe241d5f34613f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

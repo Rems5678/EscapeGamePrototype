@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cr56iudwk5fbu"
+path="res://.godot/imported/bottle_B_brown.obj-04a3160d796de10be491b5c7fbfcf074.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bottle_B_brown.obj-04a3160d796de10be491b5c7fbfcf074.mesh"]
+
+source_file="res://assets/KayLousbergAssets/obj/bottle_B_brown.obj"
+dest_files=["res://.godot/imported/bottle_B_brown.obj-04a3160d796de10be491b5c7fbfcf074.mesh", "res://.godot/imported/bottle_B_brown.obj-04a3160d796de10be491b5c7fbfcf074.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

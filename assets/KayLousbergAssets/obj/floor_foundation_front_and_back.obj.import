@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d1g1r7iq2xhll"
+path="res://.godot/imported/floor_foundation_front_and_back.obj-ffc6ca6cee7be03f9372a2e8d41e5c44.mesh"
+
+[deps]
+
+files=["res://.godot/imported/floor_foundation_front_and_back.obj-ffc6ca6cee7be03f9372a2e8d41e5c44.mesh"]
+
+source_file="res://assets/KayLousbergAssets/obj/floor_foundation_front_and_back.obj"
+dest_files=["res://.godot/imported/floor_foundation_front_and_back.obj-ffc6ca6cee7be03f9372a2e8d41e5c44.mesh", "res://.godot/imported/floor_foundation_front_and_back.obj-ffc6ca6cee7be03f9372a2e8d41e5c44.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

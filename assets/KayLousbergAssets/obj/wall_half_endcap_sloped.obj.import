@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cbkmo6p4ie8r8"
+path="res://.godot/imported/wall_half_endcap_sloped.obj-50b92da7f55bd20e724ea062fb8f54c2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall_half_endcap_sloped.obj-50b92da7f55bd20e724ea062fb8f54c2.mesh"]
+
+source_file="res://assets/KayLousbergAssets/obj/wall_half_endcap_sloped.obj"
+dest_files=["res://.godot/imported/wall_half_endcap_sloped.obj-50b92da7f55bd20e724ea062fb8f54c2.mesh", "res://.godot/imported/wall_half_endcap_sloped.obj-50b92da7f55bd20e724ea062fb8f54c2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

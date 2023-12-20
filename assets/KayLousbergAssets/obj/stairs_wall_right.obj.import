@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cftbd28qmkox1"
+path="res://.godot/imported/stairs_wall_right.obj-fdfdf850ed529c581bc475417aedcfdc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stairs_wall_right.obj-fdfdf850ed529c581bc475417aedcfdc.mesh"]
+
+source_file="res://assets/KayLousbergAssets/obj/stairs_wall_right.obj"
+dest_files=["res://.godot/imported/stairs_wall_right.obj-fdfdf850ed529c581bc475417aedcfdc.mesh", "res://.godot/imported/stairs_wall_right.obj-fdfdf850ed529c581bc475417aedcfdc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

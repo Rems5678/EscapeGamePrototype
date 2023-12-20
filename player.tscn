@@ -1,15 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://cdmblvdfgp7bj"]
+[gd_scene load_steps=7 format=3 uid="uid://cdmblvdfgp7bj"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_1g8l6"]
-[ext_resource type="PackedScene" uid="uid://cmou78ap7e8jm" path="res://inventory.tscn" id="2_3vhpx"]
+[ext_resource type="Resource" uid="uid://c1ot51owt4r7y" path="res://inventory/player_inventory.tres" id="2_hb80k"]
+[ext_resource type="Texture2D" uid="uid://b4s2q2q4trv7l" path="res://assets/mouse_cursor.png" id="3_l53bp"]
+[ext_resource type="PackedScene" uid="uid://cmou78ap7e8jm" path="res://inventory/inventory_ui.tscn" id="3_pvev8"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_uiikj"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gr5y7"]
 
-[node name="Player" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" groups=["player"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00250125, 0.0282603, 2.1003)
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("1_1g8l6")
+inventory = ExtResource("2_hb80k")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.998062, 0)
@@ -24,6 +29,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4531, 0.392931)
 
 [node name="PlayerCamera" type="Camera3D" parent="Pivot"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+fov = 93.6944
 
-[node name="Inventory" parent="." instance=ExtResource("2_3vhpx")]
-offset_top = 402.0
+[node name="InventoryUI" parent="." instance=ExtResource("3_pvev8")]
+anchor_left = 0.788
+anchor_right = 0.998
+offset_left = 0.223938
+offset_top = 4.0
+offset_right = 2.30396
+offset_bottom = 2.0
+
+[node name="MouseCursor" type="Sprite2D" parent="."]
+position = Vector2(567.5, 280.75)
+scale = Vector2(0.519, 0.5)
+texture = ExtResource("3_l53bp")
+
+[connection signal="inventory_close" from="InventoryUI" to="." method="_on_inventory_ui_inventory_close"]
+[connection signal="inventory_open" from="InventoryUI" to="." method="_on_inventory_ui_inventory_open"]

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://480pv4rc025p"
+path="res://.godot/imported/table_medium_decorated_A.obj-31300efe345edd93260cef90532ed0ec.mesh"
+
+[deps]
+
+files=["res://.godot/imported/table_medium_decorated_A.obj-31300efe345edd93260cef90532ed0ec.mesh"]
+
+source_file="res://assets/KayLousbergAssets/obj/table_medium_decorated_A.obj"
+dest_files=["res://.godot/imported/table_medium_decorated_A.obj-31300efe345edd93260cef90532ed0ec.mesh", "res://.godot/imported/table_medium_decorated_A.obj-31300efe345edd93260cef90532ed0ec.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

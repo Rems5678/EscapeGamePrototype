@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://sghe8oxtr0at"
+path="res://.godot/imported/table_long_decorated_C.obj-2a1c160c4affc1bdf80376c8c5f5914f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/table_long_decorated_C.obj-2a1c160c4affc1bdf80376c8c5f5914f.mesh"]
+
+source_file="res://assets/KayLousbergAssets/obj/table_long_decorated_C.obj"
+dest_files=["res://.godot/imported/table_long_decorated_C.obj-2a1c160c4affc1bdf80376c8c5f5914f.mesh", "res://.godot/imported/table_long_decorated_C.obj-2a1c160c4affc1bdf80376c8c5f5914f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

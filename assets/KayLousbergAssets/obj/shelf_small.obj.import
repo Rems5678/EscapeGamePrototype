@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cquhlccabo6j6"
+path="res://.godot/imported/shelf_small.obj-0bda0911afe0e3e47a8c51c0f64e0373.mesh"
+
+[deps]
+
+files=["res://.godot/imported/shelf_small.obj-0bda0911afe0e3e47a8c51c0f64e0373.mesh"]
+
+source_file="res://assets/KayLousbergAssets/obj/shelf_small.obj"
+dest_files=["res://.godot/imported/shelf_small.obj-0bda0911afe0e3e47a8c51c0f64e0373.mesh", "res://.godot/imported/shelf_small.obj-0bda0911afe0e3e47a8c51c0f64e0373.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

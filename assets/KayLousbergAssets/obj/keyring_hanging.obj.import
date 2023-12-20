@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://buivs537cnjpx"
+path="res://.godot/imported/keyring_hanging.obj-e593b0e078cd8323b6c1ecd7a112058b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/keyring_hanging.obj-e593b0e078cd8323b6c1ecd7a112058b.mesh"]
+
+source_file="res://assets/KayLousbergAssets/obj/keyring_hanging.obj"
+dest_files=["res://.godot/imported/keyring_hanging.obj-e593b0e078cd8323b6c1ecd7a112058b.mesh", "res://.godot/imported/keyring_hanging.obj-e593b0e078cd8323b6c1ecd7a112058b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

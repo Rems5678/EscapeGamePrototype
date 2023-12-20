@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://f6evk2u6indc"
+path="res://.godot/imported/banner_triple_green.obj-5b9e3bdb7e0c69e8f0dcf73898c6f03a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/banner_triple_green.obj-5b9e3bdb7e0c69e8f0dcf73898c6f03a.mesh"]
+
+source_file="res://assets/KayLousbergAssets/obj/banner_triple_green.obj"
+dest_files=["res://.godot/imported/banner_triple_green.obj-5b9e3bdb7e0c69e8f0dcf73898c6f03a.mesh", "res://.godot/imported/banner_triple_green.obj-5b9e3bdb7e0c69e8f0dcf73898c6f03a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

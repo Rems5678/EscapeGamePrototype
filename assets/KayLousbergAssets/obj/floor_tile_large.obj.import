@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cqbcsjp108cwt"
+path="res://.godot/imported/floor_tile_large.obj-ce314e5e490819c2e91f1a1cbced672d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/floor_tile_large.obj-ce314e5e490819c2e91f1a1cbced672d.mesh"]
+
+source_file="res://assets/KayLousbergAssets/obj/floor_tile_large.obj"
+dest_files=["res://.godot/imported/floor_tile_large.obj-ce314e5e490819c2e91f1a1cbced672d.mesh", "res://.godot/imported/floor_tile_large.obj-ce314e5e490819c2e91f1a1cbced672d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

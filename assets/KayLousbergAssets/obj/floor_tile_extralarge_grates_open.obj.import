@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://kqpn4jidphi"
+path="res://.godot/imported/floor_tile_extralarge_grates_open.obj-22d1e5813eed3da8e2e817e653b87917.mesh"
+
+[deps]
+
+files=["res://.godot/imported/floor_tile_extralarge_grates_open.obj-22d1e5813eed3da8e2e817e653b87917.mesh"]
+
+source_file="res://assets/KayLousbergAssets/obj/floor_tile_extralarge_grates_open.obj"
+dest_files=["res://.godot/imported/floor_tile_extralarge_grates_open.obj-22d1e5813eed3da8e2e817e653b87917.mesh", "res://.godot/imported/floor_tile_extralarge_grates_open.obj-22d1e5813eed3da8e2e817e653b87917.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

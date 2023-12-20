@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5pny0p5pe08e"]
+
+[ext_resource type="Script" path="res://puzzle1.gd" id="1_cmjwx"]
+[ext_resource type="PackedScene" uid="uid://c3uipp1urkpb8" path="res://table.tscn" id="1_ks73m"]
+[ext_resource type="PackedScene" uid="uid://rl1t84khqcou" path="res://bottle_a.tscn" id="2_0ba0u"]
+[ext_resource type="PackedScene" uid="uid://c52l7b250ov5q" path="res://interactables/interaction_trigger.tscn" id="4_s7adj"]
+
+[node name="puzzle1" type="Node3D"]
+script = ExtResource("1_cmjwx")
+
+[node name="Table" parent="." instance=ExtResource("1_ks73m")]
+
+[node name="bottle_a" parent="." instance=ExtResource("2_0ba0u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.01518, 0.676094)
+
+[node name="bottle_a2" parent="." instance=ExtResource("2_0ba0u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.01518, 0.0397161)
+
+[node name="bottle_a3" parent="." instance=ExtResource("2_0ba0u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.01518, -0.68535)
+
+[node name="InteractionTrigger" parent="." instance=ExtResource("4_s7adj")]
+transform = Transform3D(3.14069, 0, 0, 0, 3.14069, 0, 0, 0, 3.14069, 0, 0, 0)
+
+[editable path="Table"]

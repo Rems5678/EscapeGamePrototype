@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bbackvn0trovx"
+path="res://.godot/imported/table_long_tablecloth.obj-52cbc3f9eaf486cb6fcd705cec5a73af.mesh"
+
+[deps]
+
+files=["res://.godot/imported/table_long_tablecloth.obj-52cbc3f9eaf486cb6fcd705cec5a73af.mesh"]
+
+source_file="res://assets/KayLousbergAssets/obj/table_long_tablecloth.obj"
+dest_files=["res://.godot/imported/table_long_tablecloth.obj-52cbc3f9eaf486cb6fcd705cec5a73af.mesh", "res://.godot/imported/table_long_tablecloth.obj-52cbc3f9eaf486cb6fcd705cec5a73af.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
